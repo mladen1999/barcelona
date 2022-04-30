@@ -1,0 +1,428 @@
+/*
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+*/
+body {
+  /* d-flex flex-column min-vh-100 */
+  display: flex;
+  height: 100vh; 
+  min-height: 100px;
+  flex-direction: column;
+  background-color: gray !important;
+}
+.div1 {
+  height: 100%;
+  width: 100%;
+}
+.div2 {
+width:70%;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.center1 {
+display: block;
+margin-left: 180px;
+}
+.cen {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+/*========= CONTACT US =========*/
+.email > a{
+  color: black;
+  text-decoration: none;
+}
+.email > a:hover {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.phone > a{
+  color: black;
+  text-decoration: none;
+}
+.phone > a:hover {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.address > a{
+  color: black;
+  text-decoration: none;
+}
+.address > a:hover {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.hideme {
+  display: none;  
+}
+.presidentsImg{
+  height: 500px !important;
+  width: 25% !important;
+}
+.navIcon {
+  width: 20px;
+  height: 20px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.child {
+  width: auto;
+  height: auto;
+  /* Center horizontally*/
+  margin: 0 auto;
+  padding-bottom: 450px;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/*==============================*/
+/*========= GALERIJA =========*/
+#myModal {
+  top: calc(15% - 70px) !important;
+  height: 750px;
+  width: 80%;
+  margin-left: 9%;
+  }
+  .row > .column {
+  padding: 0 8px;
+  }
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+  float: left;
+  width: 25%;
+  }
+  
+  /* The Modal (background) */
+  /*
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+  }
+  */
+  
+  /* Modal Content */
+  .modal-content {
+  
+  
+  }
+  
+  /* The Close Button */
+  .close {
+  color: rgb(255, 0, 0) !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px !important;
+  font-weight: bold;
+  
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+  display: none;
+  margin-left: 10%;
+  margin-right: 5%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(188, 21, 21) !important;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: blue;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+  background-color: rgba(13, 12, 12, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+  color: #0b0a0a;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  background-color: wheat;
+  }
+  
+  img.demo {
+  opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+  opacity: 1;
+  }
+  
+  img.hover-shadow {
+  transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  }
+  
+  .picture {
+  width: 100vh;
+  height: 80vh;
+  margin-right: 500px;
+  }
+  
+  .picture1 {
+    max-width: 100%;
+    height: 500px;
+  }
+  .picture2 { 
+    margin-left: 115px;
+  }
+.pictureHover :hover{
+  cursor: crosshair;
+}
+.msgContact {
+  resize: none;
+}
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*=============================*/
+/* PRESIDENTS */
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+/*======= [ Mobile responsive for gallery ] ======*/
+@media only screen and (max-width: 540px) {
+.gallery {
+  padding-bottom: 390px;
+}
+.sizeBettwen {
+  padding-bottom: 10px;
+}
+.picture {
+  height: 100%;
+}
+#myModal {
+  padding-top: 230px;
+}
+}
+@media only screen and (max-width: 541px) and (min-width: 539px) {
+.gallery {
+  padding-bottom: 390px;
+}
+#myModal {
+  padding-top: 210px;
+}
+}
+/*
+@media only screen and (max-width: 821px) and (min-width: 819px) {
+
+}
+*/
+/*=============================*/
+
+@media only screen and (max-width: 281px) and (min-width: 279px)  {
+.picture1 {
+  max-width: 250px;
+  height: 300px;
+  margin-left: 55px;
+  margin-right: auto;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: 300px;
+}
+}
+@media only screen and (max-width: 376px) and (min-width: 360px)  {
+.picture1 {
+  max-width: 300px;
+  height: 350px;
+  margin-left: 65px;
+  margin-right: auto;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: 300px;
+}
+}
+@media only screen and (max-width: 393px) and (min-width: 389px)  {
+.picture1 {
+  max-width: 300px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: 300px;
+}
+}
+@media only screen and (max-width: 416px) and (min-width: 411px) {
+.picture1 {
+  max-width: 300px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: 45px;
+  display: flex;
+}
+.picture2 {
+  max-width: 300px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-control-next {
+  margin-left: 300px;
+}
+}
+
+@media only screen and (max-width: 541px) and (min-width: 539px) {
+.picture1 {
+  max-width: 300px;
+  height: 350px;
+  margin-left: 120px;
+  margin-right: auto;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: 300px;
+}
+}
+
+@media only screen and (max-width: 821px) and (min-width: 819px) {
+.picture1 {
+  max-width: 600px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+}
+
+@media only screen and (max-width: 769px) and (min-width: 767px) {
+.picture1 {
+  max-width: 600px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: 90px;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+}
+
+@media only screen and (max-width: 913px) and (min-width: 911px) {
+.picture1 {
+  max-width: 600px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: 90px;
+  display: flex;
+}
+.carousel-control-next {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+body {
+  max-height: 100%;
+}
+.navbar-nav {
+  padding-bottom: 500px;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 1023px) {
+.picture1 {
+  max-width: 80%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+.index {
+  padding-top: 8%;
+}
+.carousel-control-next, .carousel-control-prev {
+  padding-bottom: 40px;
+}
+.carousel-indicators {
+  padding-bottom: 90px;
+}
+}
