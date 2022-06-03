@@ -54,10 +54,8 @@
                         <a class="dropdown-item" href="<?= base_url('first_team/players.php') ?>">Prva Postava</a>
                     </li>
                         <a class="nav-item nav-link" href="<?= base_url('contact-us.php') ?>">Kontaktirajte nas</a>
-                        <div class="ml-4">
-
-                        </div>
-                        <div class="dropdown">
+                        
+                        <div class="dropdown ml-4">
                             <div class="pt-2">
                                 <a href=""><img class="navIcon dropdown-toggle" src="<?= base_url('assets/images/user4.png') ?>" alt="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             </div>
