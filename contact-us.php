@@ -24,7 +24,7 @@ include("includes/navbar.php");
                                 <i class="fa-solid fa-phone"></i><a class="ml-1" href="tel: 0621075706">0621075706</a>
                             </div>
                             <div class="container email">
-                                <i class="fa-solid fa-envelope"></i><a class="ml-1" href="mailto: mladenvts@gmail.com">mladenvts@gmail.com</a>
+                                <i class="fa-solid fa-envelope"></i><a class="ml-1" href="mailto: cvetovicmarko2@gmail.com">cvetovicmarko2@gmail.com</a>
                             </div>
                         </div>
                     </div>

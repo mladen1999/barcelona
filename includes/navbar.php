@@ -20,6 +20,8 @@
                 ?>
                 
                 <?php if(isset($_SESSION['authenticated'])) : ?>
+                    <a class="nav-item nav-link" href="<?= base_url('news/news.php') ?>">Novosti</a>
+
                     <a class="nav-item nav-link" href="<?= base_url('gallery.php') ?>">Galerija</a>
                     <a class="nav-item nav-link" href="<?= base_url('buy-ticket.php') ?>">Kupovina karata</a>
                     <li class="nav-item dropdown">
@@ -43,6 +45,7 @@
                         </div>
                     </li>
                     <?php else : ?>
+                        <a class="nav-item nav-link" href="<?= base_url('news/news.php') ?>">Novosti</a>
                         <a class="nav-item nav-link" href="<?= base_url('gallery.php') ?>">Galerija</a>
                         <a class="nav-item nav-link" href="<?= base_url('buy-ticket.php') ?>">Kupovina karata</a>
                         <li class="nav-item dropdown">

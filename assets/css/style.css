@@ -301,6 +301,9 @@ display: block;
 }
 }
 @media only screen and (max-width: 376px) and (min-width: 360px)  {
+.div1 {
+  margin-top: 6%;
+}
 .picture1 {
   max-width: 300px;
   height: 350px;
